@@ -7,7 +7,7 @@ const hostname = "0.0.0.0";
 const server = createServer((req,res) => {
     fs.readFile("eBird.json", function(err, data){
         if(err){
-            res.statusCode = 400;
+            res.statusCode = 404;
             res.end("Error in connection!");
             console.log("Failed to establish connection");
         } else {
