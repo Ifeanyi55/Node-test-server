@@ -5,7 +5,7 @@ const port = 3000;
 const hostname = "0.0.0.0";
 
 const server = createServer((req,res) => {
-    fs.readFile("eBird.json", function(err, data){
+    fs.readFile("Migration.json", function(err, data){
         if(err){
             res.statusCode = 404;
             res.end("Error in connection!");
